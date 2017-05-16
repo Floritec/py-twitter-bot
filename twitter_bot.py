@@ -42,8 +42,7 @@ except ImportError as error:
 # BOT CODE
 #
 
-INTERVAL_MINUTES = 10
-
+INTERVAL_MINUTES = 1
 def setup():
     # Login to Twitter
     account = Twython(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
