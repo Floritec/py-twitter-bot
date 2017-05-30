@@ -13,6 +13,10 @@ def reply(tweet):
         berlin_time = datetime.now(timezone('Europe/Berlin'))
         date = berlin_time.strftime("It is %H:%M:%S on a %A (%d-%m-%Y).")
         return "Bulbasaur" + date
+    if "1+2" in message:
+       arguments = message.split('+')
+       return str(int(arguments[0])+ int(arguments[1]))
+        
     return "2"
 
 def idle_text():
@@ -20,6 +24,8 @@ def idle_text():
     # Construct the text we want to tweet out (140 chars max)
     berlin_time = datetime.now(timezone('Europe/Berlin'))
     text = berlin_time.strftime("Hello World It is %H:%M:%S on a %A (%d-%m-%Y).")
+
+
     
 
     return text
